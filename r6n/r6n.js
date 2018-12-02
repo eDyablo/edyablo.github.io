@@ -88,8 +88,9 @@ class Display {
   }
 
   addClickListener(listener) {
-    this.canvas.addEventListener('click', listener)
-    this.dom.addEventListener('keypress', listener)
+    //this.canvas.addEventListener('click', listener)
+    this.canvas.addEventListener('touchstart', listener)
+    //this.dom.addEventListener('keypress', listener)
   }
 
   drawMarker() {
