@@ -108,8 +108,10 @@ class Display {
   }
 
   drawText(text) {
+    const size = Math.min(this.canvas.height, this.canvas.width) / 20
     const context = this.canvas.getContext('2d')
-    context.fillText(text, 30, 30)
+    context.font = size + 'px Arial'
+    context.fillText(text, size * 2, size * 2)
   }
 }
 
