@@ -38,7 +38,7 @@ class Experiment {
   }
 
   getDelay() {
-    const minDelay = 1000
+    const minDelay = 2000
     const maxDelay = 5000
     const grades = 10
     const step = (maxDelay - minDelay) / grades
