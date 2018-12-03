@@ -51,7 +51,9 @@ class Experiment {
     const reactionDelay = this.reactionTime - this.markTime
     this.addMetric(reactionDelay)
     this.display.clear()
-    this.display.drawText(Math.round(this.getAverageMetric()) + ' ms')
+    this.display.drawTopLeftText(Math.round(this.getMinimalMetric()) + ' ms')
+    this.display.drawTopCenterText(Math.round(this.getAverageMetric()) + ' ms')
+    this.display.drawTopRightText(Math.round(this.getMaximalMetric()) + ' ms')
     this.waitForMark()
   }
 
@@ -61,8 +63,16 @@ class Experiment {
       this.metrics.shift()
   }
 
+  getMinimalMetric() {
+    return this.metrics.reduce((c, m) => m < c ? m : c)
+  }
+
+  getMaximalMetric() {
+    return this.metrics.reduce((c, m) => m > c ? m : c)
+  }
+
   getAverageMetric() {
-    return this.metrics.reduce((f, s) => f + s, 0) / this.metrics.length
+    return this.metrics.reduce((c, s) => c + s, 0) / this.metrics.length
   }
 }
 
@@ -108,11 +118,28 @@ class Display {
     context.clearRect(0, 0, this.canvas.width, this.canvas.height)
   }
 
-  drawText(text) {
+  drawTopLeftText(text) {
     const size = Math.min(this.canvas.height, this.canvas.width) / 20
     const context = this.canvas.getContext('2d')
     context.font = size + 'px Arial'
+    context.textAlign = 'left'
     context.fillText(text, size * 2, size * 2)
+  }
+
+  drawTopRightText(text) {
+    const size = Math.min(this.canvas.height, this.canvas.width) / 20
+    const context = this.canvas.getContext('2d')
+    context.font = size + 'px Arial'
+    context.textAlign = 'right'
+    context.fillText(text, this.canvas.width - size * 2, size * 2)
+  }
+
+  drawTopCenterText(text) {
+    const size = Math.min(this.canvas.height, this.canvas.width) / 20
+    const context = this.canvas.getContext('2d')
+    context.font = size + 'px Arial'
+    context.textAlign = 'center'
+    context.fillText(text, this.canvas.width / 2, size * 2)
   }
 }
 
