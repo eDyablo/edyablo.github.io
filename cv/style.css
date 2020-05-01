@@ -1,14 +1,10 @@
-bod {
+body {
   height: 100%;
+  padding: 1%;
 }
 
 .article {
   clear: both;
-}
-
-.column {
-  float: left;
-  position: relative;
 }
 
 .paragraph {
@@ -25,6 +21,7 @@ bod {
 
 .left-part {
   float: left;
+  padding-right: 1%;
 }
 
 .right-part {
@@ -35,16 +32,16 @@ bod {
   font-size: xx-large;
 }
 
-.heading #contact-info {
+#contact-info {
   float: right;
   width: 28%;
   text-align: right;
 }
 
 #cover {
-  width: 68%;
+  width: 70%;
 }
 
 #summary {
-  width: 28%;
+  width: 29%;
 }
