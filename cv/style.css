@@ -1,7 +1,39 @@
-.title .name {
+bod {
+  height: 100%;
+}
+
+.article {
+  clear: both;
+}
+
+.column {
+  padding: 1%;
+  float: left;
+  position: relative;
+}
+
+.paragraph {
+  padding-top: 2%;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.heading {
+  padding: 1%;
+  background-color: darkgrey;
+}
+
+.heading #name {
   font-size: xx-large;
 }
 
-.cover .block {
-  padding-top: 10pt;
+#cover {
+  width: 68%;
+}
+
+#summary {
+  width: 28%;
+  background-color: darkgray;
 }
