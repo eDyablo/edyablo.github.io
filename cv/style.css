@@ -20,13 +20,14 @@ bod {
   font-weight: bold;
 }
 
-.heading {
-  padding: 1%;
-  background-color: darkgrey;
-}
-
 .heading #name {
   font-size: xx-large;
+}
+
+.heading #contact-info {
+  float: right;
+  width: 28%;
+  text-align: right;
 }
 
 #cover {
@@ -35,5 +36,4 @@ bod {
 
 #summary {
   width: 28%;
-  background-color: darkgray;
 }
