@@ -1,0 +1,38 @@
+body {
+  padding: 15pt;
+}
+
+.box {
+  border: 1px solid gray;
+  padding: 10pt;
+}
+
+.half {
+  float: left;
+  box-sizing: border-box;
+  width: 50%;
+}
+
+.third {
+  float: left;
+  box-sizing: border-box;
+  width: 33.3%;
+}
+
+.quarter {
+  float: left;
+  box-sizing: border-box;
+  width: 25%;
+}
+
+.two-third {
+  float: left;
+  box-sizing: border-box;
+  width: 66.6%;
+}
+
+.three-quarter {
+  float: left;
+  box-sizing: border-box;
+  width: 75%;
+}
