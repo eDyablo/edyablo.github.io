@@ -1,6 +1,6 @@
 body {
   height: 100%;
-  padding: 1%;
+  padding: 2%;
 }
 
 .article {
@@ -8,7 +8,8 @@ body {
 }
 
 .paragraph {
-  padding-top: 1%;
+  padding-top: 10pt;
+  line-height: 1.4;
 }
 
 .title {
