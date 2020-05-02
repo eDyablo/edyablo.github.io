@@ -7,6 +7,10 @@ body {
   padding: 10pt;
 }
 
+.wide {
+  clear: both;
+}
+
 .half {
   float: left;
   box-sizing: border-box;
