@@ -1,5 +1,7 @@
 body {
   padding: 15pt;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 13pt;
 }
 
 .paragraph {
@@ -8,7 +10,7 @@ body {
 }
 
 .title {
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .wide {
@@ -32,8 +34,13 @@ body {
   padding-right: 10pt;
 }
 
+.badge {
+  font-weight: bold;
+}
+
 .heading #name {
-  font-size: xx-large;
+  font-weight: bold;
+  font-size: 34pt;
 }
 
 #contact-info {
