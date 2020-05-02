@@ -1,10 +1,5 @@
 body {
-  height: 100%;
-  padding: 2%;
-}
-
-.article {
-  clear: both;
+  padding: 15pt;
 }
 
 .paragraph {
@@ -22,11 +17,15 @@ body {
 
 .left-part {
   float: left;
-  padding-right: 1%;
+  /*padding-right: 1%;*/
 }
 
 .right-part {
   float: right;
+}
+
+.half-part {
+  width: 50%;
 }
 
 .tile {
@@ -39,8 +38,6 @@ body {
 }
 
 #contact-info {
-  float: right;
-  width: 28%;
   text-align: right;
 }
 
@@ -49,5 +46,5 @@ body {
 }
 
 #summary {
-  width: 29%;
+  width: 28%;
 }
