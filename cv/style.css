@@ -28,6 +28,11 @@ body {
   float: right;
 }
 
+.tile {
+  float: left;
+  padding-right: 10pt;
+}
+
 .heading #name {
   font-size: xx-large;
 }
