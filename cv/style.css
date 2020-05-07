@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   padding: 15pt;
   font-family: 'Quicksand', sans-serif;
@@ -50,7 +54,6 @@ body {
 }
 
 #cover {
-  box-sizing: border-box;
   padding-right: 15pt;
 }
 
