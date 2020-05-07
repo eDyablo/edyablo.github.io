@@ -53,12 +53,9 @@ body {
   text-align: right;
 }
 
-#cover {
-  padding-right: 15pt;
-}
-
 @media only screen and (min-width: 768px) {
   #cover {
+    padding-right: 15pt;
     width: 70%;
   }
 
