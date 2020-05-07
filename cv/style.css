@@ -51,10 +51,15 @@ body {
 
 #cover {
   box-sizing: border-box;
-  width: 70%;
   padding-right: 15pt;
 }
 
-#summary {
-  width: 30%;
+@media only screen and (min-width: 768px) {
+  #cover {
+    width: 70%;
+  }
+
+  #summary {
+    width: 30%;
+  }
 }
